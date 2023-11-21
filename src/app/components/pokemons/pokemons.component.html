@@ -1,0 +1,23 @@
+<td><button (click)="addPokemon()" type="button" class="btn btn-primary btn-sm"> Agregar </button></td>
+<table class="table table-hover"  >
+    <thead>
+      <tr>
+        <th scope="col">Pokedex</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Imagen</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr class="table-active"*ngFor="let prod of pokemons">
+        <th scope="row">Nr° {{prod.id}}</th>
+        <td>{{prod.nombre}}  </td>
+        <td>{{prod.descripcion}}</td> 
+        <td>  <img [src]="prod.foto" alt="{{ prod.nombre }} Image" [style.width.px]="100" [style.height.px]="100">  </td>
+        <td> <button (click)="deletePokemon()" type="button" class="btn btn-primary btn-sm"> Eliminar </button> <button type="button" class="btn btn-primary btn-sm"> Editar </button> </td> 
+        
+      </tr>
+    </tbody>
+  </table>

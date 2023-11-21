@@ -1,0 +1,25 @@
+<div class="formulario-container">
+    <h2>Formulario de Ingreso</h2>
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1" class="form-label mt-4">Nombre de Pokemón</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingresar nombre de pokemon">
+        <small id="emailHelp" class="form-text text-muted">¡Atrapalos ya!</small>
+      </div>
+      <div class="form-group">
+        <label for="tipoPokemon" class="form-label mt-4">Tipo de Pokémon</label>
+        <select class="form-control" id="tipoPokemon" aria-describedby="tipoHelp" placeholder="Seleccionar tipo de Pokémon">
+            <option value="Agua">Agua</option>
+            <option value="Fuego">Fuego</option>
+            <option value="Electrico">Eléctrico</option>
+            <option value="Planta">Planta</option>
+            <option value="Lucha">Lucha</option>
+            <option value="Aire">Aire</option>
+            <option value="Fantasma">Fantasma</option>
+            <option value="Roca">Roca</option>
+        </select>
+        <small id="tipoHelp" class="form-text text-muted">¿Es tipo agua, tipo fuego, eléctrico, planta, lucha, aire, fantasma, roca? ¡Háznoslo saber!</small>
+    </div>
+      <button (click)="addPokemon()" type="button" class="btn btn-primary btn-sm">Agregar</button>
+    </form>
+  </div>
